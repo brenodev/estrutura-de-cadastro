@@ -12,5 +12,6 @@ app.use(bodyParser.json()); // para entender as informações enviadas para API 
 app.use(bodyParser.urlencoded({ extended: false })); // para entender quando for passado parametros via url
 
 // ROTAS
+require("./controllers/authController")(app); // objeto que é definido uma vez
 
 app.listen(3000); // definindo a porta da aplicação
